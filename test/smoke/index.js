@@ -25,8 +25,8 @@ rimraf('./dist', () => {
 
     console.log('Webpack build success, begin run test.');
 
-    // mocha.addFile(path.join(__dirname, 'html-test.js'));
-    // mocha.addFile(path.join(__dirname, 'css-js-test.js'));
-    // mocha.run();
+    mocha.addFile(path.join(__dirname, 'html-test.js'));
+    mocha.addFile(path.join(__dirname, 'css-js-test.js'));
+    mocha.run();
   });
 });
