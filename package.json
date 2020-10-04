@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul cover ./node_modules/.bin/mocha",
+    "test:unit": "mocha",
+    "test": "istanbul cover mocha",
     "eslint": "eslint  --fix ./lib"
   },
   "keywords": [],
